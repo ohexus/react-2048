@@ -39,11 +39,11 @@ export default function Game() {
 
   useEffect(() => {
     if (isMoving) {
-      setCells(increaseAndKillCells(cells));
+      setCells(increaseAndKillCells(cells, score, setScore));
       setIsMoving(false);
       setIsFinishedMoving(true);
     }
-  }, [cells, isMoving]);
+  }, [cells, score, setScore, isMoving]);
 
   useEffect(() => {
     if (isFinishedMoving) {
