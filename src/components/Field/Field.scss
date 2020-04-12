@@ -1,0 +1,15 @@
+.field {
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-content: space-between;
+  justify-content: space-between;
+
+  height: 450px;
+  width: 450px;
+
+  background-color: lightgreen;
+}
