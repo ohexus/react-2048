@@ -1,8 +1,5 @@
 import { createCell } from './cellManager';
-
-const generateRandomCoord = () => {
-  return Math.floor(Math.random() * 3.9);
-}
+import generateRandomCoord from '../helpers/generateRandomCoord';
 
 const initCells = () => {
   const cell1 = createCell(generateRandomCoord(), generateRandomCoord(), 2);

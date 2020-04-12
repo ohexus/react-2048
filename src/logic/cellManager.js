@@ -11,7 +11,7 @@ const createCell = (x, y, value, id) => ({
   x,
   y,
   value,
-  id: id || uniqueId(),
+  id: uniqueId(),
   state: cellStates.IDLE
 });
 
