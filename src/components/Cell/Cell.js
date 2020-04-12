@@ -4,12 +4,14 @@ import './Cell.scss';
 export default function Cell(props) {
   return (
     <div
-      className="cell"
+      className={ `cell ${props.className}` }
       style={ {
-        transform: `translate(${props.x * 110}px, ${props.y * 110}px)`
+        transform: `translate(${props.x * 100}px, ${props.y * 100}px)`
       } }
     >
-      { props.value }
+      <div className="cell__content">
+        <span>{ props.value }</span>
+      </div>
     </div>
   );
 }
