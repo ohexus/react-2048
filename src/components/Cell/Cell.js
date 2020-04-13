@@ -6,12 +6,15 @@ export default function Cell(props) {
     <div
       className={ `cell ${props.className}` }
       style={ {
-        transform: `translate(${props.x * 100}px, ${props.y * 100}px)`
+        transform: `translate(${props.x * 125}px, ${props.y * 125}px)`
       } }
     >
-      <div className="cell__content">
-        <span>{ props.value }</span>
+      <div className={`cell__number cell__number--${props.value}`}>
+        <span
+        >
+          { props.value === 0 ? '' : props.value }
+        </span>
       </div>
-    </div>
+    </div >
   );
 }

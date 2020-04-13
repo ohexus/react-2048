@@ -1,10 +1,13 @@
 .cell {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
 
-  padding: 10px;
+  padding: 5px;
 
   box-sizing: border-box;
+  
+  transition-property: transform;
+  transition: 100ms ease-in-out;
 
   &--background {
     position: static;
@@ -14,7 +17,7 @@
     position: absolute;
   }
 
-  &__content {
+  &__number {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,6 +25,116 @@
     width: 100%;
     height: 100%;
 
-    background-color: lightblue;
+    color: #f9f6f2;
+  
+    border-radius: 5px;
+
+    font-weight: 900;
+    font-size: 30px;
+
+    &--0,
+    &--2,
+    &--4 {
+      color: #776e65;
+    }
+
+    // font-size
+    &--0,
+    &--2,
+    &--4,
+    &--8,
+    &--16,
+    &--32,
+    &--64 {
+      font-size: 66px;
+    }
+
+    &--128,
+    &--256,
+    &--512 {
+      font-size: 47px;
+    }
+
+    &--1024,
+    &--2048,
+    &--4096,
+    &--8192 {
+      font-size: 40px;
+    }
+
+    &--16384,
+    &--32768,
+    &--65536 {
+      font-size: 30px;
+    }
+
+    // background-color
+    &--0 {
+      background-color: #eee4da59;
+    }
+
+    &--2 {
+      background-color: #eee4da;
+    }
+
+    &--4 {
+      background-color: #ede0c8;
+    }
+
+    &--8 {
+      background-color: #f2b179;
+    }
+
+    &--16 {
+      background-color: #f59563;
+    }
+
+    &--32 {
+      background-color: #f67c5f;
+    }
+
+    &--64 {
+      background-color: #f65e3b;
+    }
+
+    &--128 {
+      background-color: #edcf72;
+    }
+
+    &--256 {
+      background-color: #edcc61;
+    }
+
+    &--512 {
+      background-color: #edc850;
+    }
+
+    &--1024 {
+      background-color: #edc53f;
+    }
+
+    &--2048 {
+      background-color: #e36d6d;
+    }
+
+    &--4096 {
+      background-color: #e75a5a;
+    }
+
+    &--8192 {
+      background-color: #ec4646;
+    }
+
+    &--16384 {
+      background-color: #f13232;
+    }
+
+    &--32768 {
+      background-color: #f71d1d;
+    }
+
+    &--65536 {
+      background-color: #ff0000;
+    }
   }
 }

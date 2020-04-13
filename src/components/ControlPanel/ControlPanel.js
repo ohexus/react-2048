@@ -1,10 +1,13 @@
 import React from 'react';
+import './ControlPanel.scss';
+import Score from '../Score/Score';
+import ButtonNewGame from '../ButtonNewGame/ButtonNewGame';
 
 export default function ControlPanel(props) {
   return (
     <div className="control">
-      <button className="control__new-game" type="button" onClick={ props.newGame }> new game </button>
-      <h3 className="control__score">{ props.score }</h3>
+      <ButtonNewGame onClick={props.newGame} text="New Game" />
+      <Score score={ props.score } />
     </div>
   );
 }

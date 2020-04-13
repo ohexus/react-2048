@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-
-import initCells from '../../logic/InitCells';
+import './Game.scss';
 
 import ControlPanel from '../ControlPanel/ControlPanel';
 import Field from '../Field/Field';
 
+import initCells from '../../logic/InitCells';
 import { moveCells, directions } from '../../logic/moveCells';
 import increaseAndKillCells from '../../logic/increaseAndKillCells';
 import addNewCells from '../../logic/addNewCells';

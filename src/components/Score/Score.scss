@@ -1,0 +1,19 @@
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__title,
+  &__number {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 30px;
+  }
+
+  &__number {
+    font-size: 40px;
+  }
+}
