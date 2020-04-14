@@ -5,6 +5,7 @@ import { isEqual, sortBy } from 'lodash';
 
 import ControlPanel from '../ControlPanel/ControlPanel';
 import Field from '../Field/Field';
+import Description from '../Description/Descriptions';
 
 import initCells from '../../logic/InitCells';
 import { moveCells, directions } from '../../logic/moveCells';
@@ -86,6 +87,7 @@ export default function Game() {
     >
       <ControlPanel newGame={ newGame } score={ score } />
       <Field cells={ cells } isGameOver={ isGameOver } />
+      <Description />
     </div>
   );
 }
