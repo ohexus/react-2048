@@ -8,6 +8,9 @@ export default function Field(props) {
 
   return (
     <div className="field">
+      { props.isGameOver && <div className="field__game-over">
+        <h1> Game Over! </h1>
+      </div> }
       <div className="field__ground field__ground--background">
         { backgroundCells.map((cell, i) => (
           <Cell
